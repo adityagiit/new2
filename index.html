@@ -10,57 +10,27 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-       
+
     <style>
         * {
             margin: 0;
             padding: 0;
-            width: auto;
         }
 
         body {
             background-color: rgba(0, 0, 33);
             color: white(192, 207, 227);
             font-family: 'poppins', sans-serif;
-
-
-
-
-             @media only screen and (max-width: 455px) {
-           
-            .first
-            {
-             flex-direction: column;
-            }
+            width: auto;
         }
 
-@media (min-width: 601px) and (max-width: 900px) {
-  body {
-    font-size: 18px;
-    padding: 15px;
-  }
-  .sidebar {
-    display: none; /* simplify layout for tablets */
-  }
-}
-
-
-
-
-        nav {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            height: 100px;
-            background-color: rgb(26, 69, 143);
-            color: azure;
-            font-weight: bold;
-        }
 
         nav ul {
+            text-align: center;
             display: flex;
             justify-content: center;
             color: azure;
+            border-block-start: beige;
 
         }
 
@@ -83,34 +53,53 @@
 
         .left {
             font-size: 1.9rem;
-            color: rgb(23, 23, 73);
+            
+            color: rgb(228, 228, 238);
+            text-align: center;
+            background-color: rgb(47, 47, 105);
+            padding:5vh;
+            font-style: oblique;
+    text-decoration: underline;
+}
+        
+        .right{
+            background-color: gray;
+            font-style: italic;
         }
+
 
         .first {
-            display: flex;
+            display:grid;
             justify-content: space-around;
-            margin: 15px 0;
-
-
+            margin: 5px 0;
+            align-items: flex-start;
+            flex-direction: row;
+            color: aliceblue;
+            
         }
 
-        .first div> {
-            width: 30%;
+        @media only screen and (max-width: 768px) {
+            body {
+                flex-direction: column;
+            }
+
+            nav ul {
+
+                flex-direction: column;
+            }
+
+            nav ul li a {
+                text-align: center;
+            }
+
+
+            .first {
+
+                flex-direction: column;
+            }
         }
 
-
-        .leftfirst {
-
-            width: 30%;
-
-            color: rgb(20, 202, 202);
-            font-size: 1.5rem;
-            margin: 110px;
-        }
-
-
-
-
+      
         .btn {
             color: rgb(226, 20, 20);
             padding: 10px;
@@ -124,29 +113,15 @@
         }
 
 
-
-        .rightfirst {
-            background-color: (0, 0, 33);
-            width: 30%;
-            margin-right: 300px;
-            size-adjust:
-        }
-
         .light {
             color: blueviolet;
             font-size: 2.0em;
         }
 
 
-       
-       
 
-        .section2 {
-            background-color: rgb(131, 78, 217);
-           height: 40vh;
-           color: azure;
-        }
-        
+
+
 
         footer {
             background-color: rgb(88, 60, 191);
@@ -161,19 +136,20 @@
             color: rgb(227, 210, 211);
             text-align: center;
         }
-.footer-second{
-    
-    justify-content: space-between;
-    text-align: center;
-    
-    
-}
-.footer-second ul{
-    color: rgb(11, 182, 85);
-    justify-content: space-between;
-    text-align: center;
-}
-       
+
+        .footer-second {
+
+            justify-content: space-between;
+            text-align: center;
+
+
+        }
+
+        .footer-second ul {
+            color: rgb(11, 182, 85);
+            justify-content: space-between;
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -181,9 +157,9 @@
 <body>
 
     <header>
+         <div class="left">Aditya's portfolio</div>
         <nav>
-
-            <div class="left">Aditya's portfolio</div>
+       
             <div class="right">
                 <ul>
                     <li><a href="1st.png.png">services</a></li>
@@ -199,35 +175,31 @@
 
 
     <main>
-        <section class="first">
-            <div class="leftfirst">
-                <div>Hiii i'm <span class="light">Aditya</span></div>
+        <div class="first">
+
+            <div>Hiii i'm <span class="light">Aditya</span></div>
+            <div>
+                i'm passionate about coding And I'm
+
+
+
                 <div>
-                    i'm passionate about coding And I'm
-
-
-
-                    <div>
-                        <span id="element"></span>
-                        <div class="buttons">
-                            <button class="btn">
-                               <a href="resume.pdf"> Download resume</a>
-                            </button>
-                            <button class="btn2">
-                                Visit GitHub
-                            </button>
-                        </div>
+                    <span id="element"></span>
+                    <div class="buttons">
+                        <button class="btn">
+                            <a href="resume.pdf"> Download resume</a>
+                        </button>
+                        <button class="btn2">
+                            Visit GitHub
+                        </button>
                     </div>
+                </div>
 
 
-                </div>
             </div>
-            <div class="rightfirst">
-                <div>
-                    <img src="1st.png.png" width="500" height="400">
-                </div>
-            </div>
-             <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        </div>
+        
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
         <script>
             var typed = new Typed('#element', {
                 strings: ["android developer", "graphics designer", 'web delveloper', 'android developer'],
@@ -243,8 +215,9 @@
                 <h3>Aditya portfolio</h3>
             </div>
             <div class="footer-second">
-                <h4><p>&copy; 2025 Aditya kumar- All Rights Reserved.</p>
-</h4>
+                <h4>
+                    <p>&copy; 2025 Aditya kumar- All Rights Reserved.</p>
+                </h4>
             </div>
 
 
