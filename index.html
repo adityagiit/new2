@@ -22,12 +22,12 @@
             background-color: rgba(0, 0, 33);
             color: white(192, 207, 227);
             font-family: 'poppins', sans-serif;
-/* Default styles (desktop-first approach) */
 
-/* Small devices (phones, portrait) */
-@media (max-width: 450px) {
+
+
+@media (max-width: 455px) {
   body {
-    font-size: 16px;
+  
     padding: 10px;
   }
   header, nav, section {
@@ -37,8 +37,14 @@
     display: none; 
   }
 }
+             @media only screen and (max-width: 455px) {
+           
+            .first
+            {
+             flex-direction: column;
+            }
+        }
 
-/* Medium devices (tablets) */
 @media (min-width: 601px) and (max-width: 900px) {
   body {
     font-size: 18px;
@@ -49,19 +55,7 @@
   }
 }
 
-/* Large devices (desktops/laptops) */
-@media (min-width: 901px) {
-  body {
-    font-size: 20px;
-    padding: 20px;
-  }
-  .menu {
-    display: block;
-  }
-  .sidebar {
-    display: block;
-  }
-}
+
 
 
         nav {
