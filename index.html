@@ -51,34 +51,36 @@
         }
 
 
-        .left {
-            font-size: 1.9rem;
-            
+        .main_header{
+            font-size: 1.5rem;
             color: rgb(228, 228, 238);
             text-align: center;
             background-color: rgb(47, 47, 105);
-            padding:5vh;
+            padding: 40px 0;
             font-style: oblique;
-    text-decoration: underline;
+            text-decoration: underline;
+            position: relative;
+             clip-path: ellipse(100% 80% at 50% 0%);
 }
         
-        .right{
+
+        .right {
             background-color: gray;
             font-style: italic;
         }
 
 
         .first {
-            display:grid;
+            display: grid;
             justify-content: space-around;
             margin: 5px 0;
             align-items: flex-start;
             flex-direction: row;
             color: aliceblue;
-            
+
         }
 
-        @media only screen and (max-width: 768px) {
+        @media only screen and (max-width: 455px) {
             body {
                 flex-direction: column;
             }
@@ -86,20 +88,28 @@
             nav ul {
 
                 flex-direction: column;
+
             }
 
             nav ul li a {
+                margin: 60px;
+
                 text-align: center;
             }
+            .images{
+               max-width: 300px;
+            }
+           
 
 
             .first {
+                display: grid;
 
                 flex-direction: column;
             }
         }
 
-      
+
         .btn {
             color: rgb(226, 20, 20);
             padding: 10px;
@@ -150,29 +160,33 @@
             justify-content: space-between;
             text-align: center;
         }
+        .images{
+        max-width: 100%;
+        height:auto;
+        }
     </style>
 </head>
 
 
 <body>
 
-    <header>
-         <div class="left">Aditya's portfolio</div>
-        <nav>
-       
-            <div class="right">
-                <ul>
-                    <li><a href="1st.png.png">services</a></li>
-                    <li><a href="projects.html">project</a></li>
-                    <li><a href="1st.png.png">contact</a></li>
-                    <li><a href="1st.png.png"> about</a></li>
-                </ul>
-            </div>
-
-        </nav>
-        .
+    <header class="main_header">
+    <h1>Aditya's portfolio</h1>
     </header>
+        
 
+            <nav class="right">
+                <ul>
+                    <li><a href="vid.mp4">services</a></li>
+                    <li><a href="projects.html">project</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                    <li><a href="about.html"> about</a></li>
+                </ul>
+            </nav>
+
+    
+            
+            .
 
     <main>
         <div class="first">
@@ -190,15 +204,18 @@
                             <a href="resume.pdf"> Download resume</a>
                         </button>
                         <button class="btn2">
-                            Visit GitHub
+                            <a href="https://github.com/" about>GitHub</a>
                         </button>
                     </div>
                 </div>
 
 
+                
+                
+                
             </div>
+            <img src="1st.png.png" alt="Description of image" class="images"> 
         </div>
-        
         <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
         <script>
             var typed = new Typed('#element', {
